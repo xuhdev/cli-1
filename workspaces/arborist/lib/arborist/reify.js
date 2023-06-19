@@ -483,29 +483,27 @@ module.exports = cls => class Reifier extends cls {
 
     process.emit('time', 'reify:trashOmits')
 
-    const filterTop = node => {
+    const omitNodes = this.idealTree.inventory.filter((node) => {
+      const { top } = node
       // if the top is not the root or workspace filter it out
-      if (!node.isProjectRoot && !node.isWorkspace) {
+      if (!top.isProjectRoot && !top.isWorkspace) {
         return false
       }
-      // if we have no filter set, then include it by default
-      if (!this.diff?.filterSet?.size) {
-        return true
+      // if there is a non-empty filter set, and our top node is not in it then
+      // it should be filtered out
+      if (this.diff?.filterSet?.size && !this.diff.filterSet.has(top)) {
+        return false
       }
-      // otherwise include based on if the top node is in our filter set
-      return this.diff.filterSet.has(node)
-    }
+      // then filter based on the dep type and which omit flags were set
+      return (
+        node.peer && this[_omitPeer] ||
+        node.dev && this[_omitDev] ||
+        node.optional && this[_omitOptional] ||
+        node.devOptional && this[_omitOptional] && this[_omitDev]
+      )
+    })
 
-    const filter = node =>
-      filterTop(node.top) &&
-        (
-          node.peer && this[_omitPeer] ||
-          node.dev && this[_omitDev] ||
-          node.optional && this[_omitOptional] ||
-          node.devOptional && this[_omitOptional] && this[_omitDev]
-        )
-
-    for (const node of this.idealTree.inventory.filter(filter)) {
+    for (const node of omitNodes) {
       this[_addNodeToTrashList](node)
     }
 
