@@ -1,5 +1,29 @@
 # Changelog
 
+## [10.6.1](https://github.com/npm/cli/compare/v10.6.0...v10.6.1) (2024-04-26)
+
+### Bug Fixes
+
+* [`71cbd91`](https://github.com/npm/cli/commit/71cbd91b6f01875a99eeae989ea67489bdd0178d) [#7421](https://github.com/npm/cli/pull/7421) hide banner for exec and explore (#7421) (@lukekarrys)
+* [`57ebebf`](https://github.com/npm/cli/commit/57ebebf03d55d4eda2b6439149a97b595a191aaf) [#7418](https://github.com/npm/cli/pull/7418) update repository.url in package.json (#7418) (@wraithgar)
+
+### Dependencies
+
+* [`762888a`](https://github.com/npm/cli/commit/762888a3b603704c7c53a94a704b8a7f3edea918) [#7429](https://github.com/npm/cli/pull/7429) update dependencies for workspaces (#7429)
+* [workspace](https://github.com/npm/cli/releases/tag/arborist-v7.5.1): `@npmcli/arborist@7.5.1`
+* [workspace](https://github.com/npm/cli/releases/tag/config-v8.3.1): `@npmcli/config@8.3.1`
+* [workspace](https://github.com/npm/cli/releases/tag/libnpmaccess-v8.0.5): `libnpmaccess@8.0.5`
+* [workspace](https://github.com/npm/cli/releases/tag/libnpmdiff-v6.1.1): `libnpmdiff@6.1.1`
+* [workspace](https://github.com/npm/cli/releases/tag/libnpmexec-v8.0.1): `libnpmexec@8.0.1`
+* [workspace](https://github.com/npm/cli/releases/tag/libnpmfund-v5.0.9): `libnpmfund@5.0.9`
+* [workspace](https://github.com/npm/cli/releases/tag/libnpmhook-v10.0.4): `libnpmhook@10.0.4`
+* [workspace](https://github.com/npm/cli/releases/tag/libnpmorg-v6.0.5): `libnpmorg@6.0.5`
+* [workspace](https://github.com/npm/cli/releases/tag/libnpmpack-v7.0.1): `libnpmpack@7.0.1`
+* [workspace](https://github.com/npm/cli/releases/tag/libnpmpublish-v9.0.7): `libnpmpublish@9.0.7`
+* [workspace](https://github.com/npm/cli/releases/tag/libnpmsearch-v7.0.4): `libnpmsearch@7.0.4`
+* [workspace](https://github.com/npm/cli/releases/tag/libnpmteam-v6.0.4): `libnpmteam@6.0.4`
+* [workspace](https://github.com/npm/cli/releases/tag/libnpmversion-v6.0.1): `libnpmversion@6.0.1`
+
 ## [10.6.0](https://github.com/npm/cli/compare/v10.5.2...v10.6.0) (2024-04-25)
 
 ### Features

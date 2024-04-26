@@ -1,5 +1,11 @@
 # Changelog
 
+## [9.0.7](https://github.com/npm/cli/compare/libnpmpublish-v9.0.6...libnpmpublish-v9.0.7) (2024-04-26)
+
+### Bug Fixes
+
+* [`57ebebf`](https://github.com/npm/cli/commit/57ebebf03d55d4eda2b6439149a97b595a191aaf) [#7418](https://github.com/npm/cli/pull/7418) update repository.url in package.json (#7418) (@wraithgar)
+
 ## [9.0.6](https://github.com/npm/cli/compare/libnpmpublish-v9.0.5...libnpmpublish-v9.0.6) (2024-04-25)
 
 ### Dependencies

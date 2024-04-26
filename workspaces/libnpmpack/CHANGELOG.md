@@ -1,5 +1,15 @@
 # Changelog
 
+## [7.0.1](https://github.com/npm/cli/compare/libnpmpack-v7.0.0...libnpmpack-v7.0.1) (2024-04-26)
+
+### Bug Fixes
+
+* [`57ebebf`](https://github.com/npm/cli/commit/57ebebf03d55d4eda2b6439149a97b595a191aaf) [#7418](https://github.com/npm/cli/pull/7418) update repository.url in package.json (#7418) (@wraithgar)
+
+### Dependencies
+
+* [workspace](https://github.com/npm/cli/releases/tag/arborist-v7.5.1): `@npmcli/arborist@7.5.1`
+
 ## [7.0.0](https://github.com/npm/cli/compare/libnpmpack-v6.0.9...libnpmpack-v7.0.0) (2024-04-25)
 
 ### ⚠️ BREAKING CHANGES
